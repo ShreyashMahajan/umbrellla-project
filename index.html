@@ -9,25 +9,32 @@
 </head>
 <body>
        <main class="main">
-        <section class="w-50">
-         <img src="./assets/images/Blue umbrella.png" class="img-umbrella" alt="umbrella" />
-        </section>
+        <section class="w-50 d-flex justify-content-center">
+        <div class="umbrella-img-container">
+            <img src="./assets/images/Blue-umbrella.png" class="img-umbrella" alt="umbrella" />
+            <img src="./assets/images/Yello-umbrella.png" style="visibility: hidden" alt="logo" id="logo" class="company-logo" />
+         
+        </div>  </section>
         <section class="w-50">
             <div>
                 <h2 class="heading-lg">Custom Umbrella</h2>
                 <div class="color-container">
-                    <p class="color-palette"></p>
-                    <p class="color-palette yellow"></p>
-                    <p class="color-palette blue"></p>
+                    <p class="color-palette"  name="pink" id="pink" value='pink'></p>
+                    <p class="color-palette yellow" name="yellow" value="yellow"></p>
+                    <p class="color-palette blue" name="blue" value="blue"></p>
                 </div>
                 <h4 class="sub-heading">Customize your umbrella</h4>
                 <h5>Upload a logo for an instant preview</h5>
                 <p class="font-small">.png and .jpg files only. Max file size is 5MB.</p>
-                <button class="btn-upload">
-                    <span>
-                        <img src="./assets/images/upload_icon.svg" class="w-15" alt="logo" />
+                <label for="btn-upload" class="label-upload">
+                     <span>
+                        <img src="./assets/images/upload_icon.svg" id="umbrella-upload" class="w-15" alt="logo" />
                     UPLOAD LOGO
-                    </span></button>
+                    </span>
+                    
+                </label>
+                <input class="btn-upload" id="btn-upload" type="file" accept=".jpg, .jpeg, .png">
+                   
             </div>
         </section>
        </main>       
